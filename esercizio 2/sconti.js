@@ -1,8 +1,7 @@
 // 1. Chiedi all'utente il prezzo
-let prezzo = prompt( "Inserisci il prezzo 
-del prodotto:" );
- prezzo = parseFloat(prezzo); // converti
-la stringa in numero decimale
+let prezzo = prompt( "Inserisci il prezzo del prodotto:" );
+ prezzo = parseFloat(prezzo);
+  // converti la stringa in numero decimale
 
 // 2. chiedi se ha un coupon (si/no)
 let haCoupon = prompt ("Hai un coupon 
@@ -13,9 +12,9 @@ sconto?  (si/no)" );
 // - se l'utente ha coupon, applichiamo 
 uno sconto del 20 %
 // - altrimenti nessuno sconto
-// - BONUS: se il prezzo è sopra un certo
-valore ( es. 100€), applichiamo uno sconto
-extra
+// - BONUS: se il prezzo è sopra un certo valore ( es. 100€), applichiamo uno sconto extra
+
+
 
 
 let sconto = o
