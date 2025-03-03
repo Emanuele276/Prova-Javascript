@@ -1,4 +1,4 @@
-// 1. Seleziona gli elementi del dom
+// 1. Seleziona gli elementi del Dom
 const titolo = document.getElementById( "titolo" );
 const testo = document.getElementById( "testo" );
 const inputTesto = document.getElementById( "inputTesto");
@@ -10,9 +10,9 @@ btnCambia.addEventListener("click" , function() {
     const nuovoContenuto = inputTesto.value;
 
     // Se il testo non è vuoto, cambia il paragrafo
-    if (nuovoContenuto.trim() !=="") { 
+    if (nuovoContenuto.trim() !== "") { 
         testo.textContent = nuovoContenuto;
     } else {
-        alert("Inserisci del testo prima di cambiare il contenuto!");
+      alert("Inserisci del testo prima di cambiare il contenuto!");
     }
 });
