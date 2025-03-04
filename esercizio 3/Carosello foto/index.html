@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carosello foto</title>
+    <style>
+     
+    .ekw_carousel_container {
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+    height: 30px;
+}
+
+.ekw_control_container {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    z-index: 2;
+}
+
+.ekw_control_container > * {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition: all 0.6s;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.ekw_control_container .left {
+    left: 0;
+}
+
+.ekw_control_container .right {
+    right: 0;
+}
+
+.ekw_content_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70%;
+    display: flex;
+    transition: left 0.4s;
+}
+
+    </style>
+
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+<div class="ekw_carousel_container">
+    <div class="ekw_control_container">
+        <span data-direction="sx" class="material-icons left">keyboard_arrow_left</span>
+        <span data-direction="dx" class="material-icons right">keyboard_arrow_right</span>
+    </div>
+    <div class="ekw_content_container" style="left: 0;">
+        <!-- Le immagini andranno qui -->
+    </div>
+</div>
+
+<div class="ekw_content_container" style="left: 0;">
+    <div><img src="photo-1506748686214-e9df14d4d9d0.webp" alt="Image 1"></div>
+    <div><img src="photo-1512917774080-9991f1c4c750.webp" alt="Image 2"></div>
+    <div><img src="photo-1516117172878-fd2c41f4a759.webp" alt="Image 3"></div>
+    <div><img src="photo-1740918417127-100b62f7889d.webp" alt="Image 4"></div>
+    <div><img src="premium_photo-1700391547713-ee7ec2838fd1.webp" alt="Image 5"></div>
+</div>
+
+<button></button>
+
