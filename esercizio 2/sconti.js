@@ -1,21 +1,16 @@
 // 1. Chiedi all'utente il prezzo
-let prezzo = prompt( "Inserisci il prezzo 
-del prodotto:" );
- prezzo = parseFloat(prezzo); // converti
-la stringa in numero decimale
+let prezzo = prompt( "Inserisci il prezzo del prodotto:" );
+ prezzo = parseFloat(prezzo); // converti la stringa in numero decimale
 
-// 2. chiedi se ha un coupon (si/no)
-let haCoupon = prompt ("Hai un coupon 
-sconto?  (si/no)" );
+
+ // 2. chiedi se ha un coupon (si/no)
+let haCoupon = prompt ("Hai un coupon sconto?  (si/no)");
 
 
 // 3. Imposta regole per lo sconto
-// - se l'utente ha coupon, applichiamo 
-uno sconto del 20 %
+// - se l'utente ha coupon, applichiamo uno sconto del 20 %
 // - altrimenti nessuno sconto
-// - BONUS: se il prezzo è sopra un certo
-valore ( es. 100€), applichiamo uno sconto
-extra
+// - BONUS: se il prezzo è sopra un certovalore (es. 100€), applichiamo uno sconto extra
 
 
 let sconto = o
@@ -30,13 +25,10 @@ if (prezzo > 100){
 }
 
 // 4. Calcola il prezzo finale
-let prezzoFinale = prezzo - (prezzo * 
-sconto);
+let prezzoFinale = prezzo - (prezzo * sconto);
 
 
 // 5. Mostra il risultato in console
 console.log("Prezzo iniziale:", prezzo);
-console.log("Sconto applicato:", sconto *
- 100 + "%");
-console.log(" Prezzo finale:",
-prezzoFinale.toFixed (2)) ;
+console.log("Sconto applicato:", sconto * 100 + "%");
+console.log(" Prezzo finale:", prezzoFinale.toFixed (2)) ;
